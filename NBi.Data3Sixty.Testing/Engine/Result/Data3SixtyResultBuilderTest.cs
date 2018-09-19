@@ -22,10 +22,25 @@ namespace NBi.Data3Sixty.Testing.Engine.Result
                 && x.Properties == new Dictionary<string, object>() { { "Identifier", "122" } });
 
             var raw = new TestResult(test);
-            raw.SetResult(ResultState.Error, "Score is not achieved - score: 0.75", string.Empty);
+            raw.SetResult(ResultState.Error, "{\"timestamp\":\"2018-09-19T11:18:58.4928605+02:00\",\"success\":false,\"score\":0.62,\"threshold\":0.75}", string.Empty);
             var builder = new Data3SixtyResultBuilder();
             var result = builder.Execute(raw);
-            Assert.That(result[0].RuleImplementationID, Is.EqualTo(122));
+            Assert.That(result[0].RuleImplementationID, Is.EqualTo(0));
+        }
+
+        [Test]
+        public void Execute_TestResult_ParseTwoIdentifiers()
+        {
+            var test = Mock.Of<ITest>(
+                x => x.IsSuite == false
+                && x.TestName == new TestName()
+                && x.Properties == new Dictionary<string, object>() { { "Identifier", "122.156" } });
+
+            var raw = new TestResult(test);
+            raw.SetResult(ResultState.Error, "{\"timestamp\":\"2018-09-19T11:18:58.4928605+02:00\",\"success\":false,\"score\":0.62,\"threshold\":0.75}", string.Empty);
+            var builder = new Data3SixtyResultBuilder();
+            var result = builder.Execute(raw);
+            Assert.That(result[0].RuleImplementationID, Is.EqualTo(156));
         }
 
         [Test]
@@ -37,11 +52,11 @@ namespace NBi.Data3Sixty.Testing.Engine.Result
                 && x.Properties == new Dictionary<string, object>() { { "Identifier", "122" } });
 
             var raw = new TestResult(test);
-            raw.SetResult(ResultState.Error, "Score is not achieved - score: 0.75", string.Empty);
+            raw.SetResult(ResultState.Error, "{\"timestamp\":\"2018-09-19T11:18:58.4928605+02:00\",\"success\":false,\"score\":0.62,\"threshold\":0.75}", string.Empty);
             var builder = new Data3SixtyResultBuilder();
             var result = builder.Execute(raw);
-            Assert.That(result[0].PassFraction, Is.EqualTo(0.75));
-            Assert.That(result[0].FailFraction, Is.EqualTo(0.25));
+            Assert.That(result[0].PassFraction, Is.EqualTo(0.62));
+            Assert.That(result[0].FailFraction, Is.EqualTo(0.38));
         }
 
         [Test]
@@ -53,11 +68,11 @@ namespace NBi.Data3Sixty.Testing.Engine.Result
                 && x.Properties == new Dictionary<string, object>() { { "Identifier", "123" } });
 
             var raw = new TestResult(test);
-            raw.SetResult(ResultState.Success, "Wow great Score- score: 1", string.Empty);
+            raw.SetResult(ResultState.Success, "{\"timestamp\":\"2018-09-19T11:18:58.4928605+02:00\",\"success\":true,\"score\":0.98,\"threshold\":0.75}", string.Empty);
             var builder = new Data3SixtyResultBuilder();
             var result = builder.Execute(raw);
-            Assert.That(result[0].PassFraction, Is.EqualTo(1));
-            Assert.That(result[0].FailFraction, Is.EqualTo(0));
+            Assert.That(result[0].PassFraction, Is.EqualTo(0.98));
+            Assert.That(result[0].FailFraction, Is.EqualTo(0.02));
         }
 
         [Test]
@@ -69,7 +84,7 @@ namespace NBi.Data3Sixty.Testing.Engine.Result
                 && x.Properties == new Dictionary<string, object>() { { "Identifier", "122" } });
 
             var raw = new TestResult(test);
-            raw.SetResult(ResultState.Error, "Score is not achieved - score: 0.75", string.Empty);
+            raw.SetResult(ResultState.Error, "{\"timestamp\":\"2018-09-19T11:18:58.4928605+02:00\",\"success\":false,\"score\":0.62,\"threshold\":0.75}", string.Empty);
             var builder = new Data3SixtyResultBuilder();
             var result = builder.Execute(raw);
             Assert.That(result[0].Passed, Is.False);
@@ -84,7 +99,7 @@ namespace NBi.Data3Sixty.Testing.Engine.Result
                 && x.Properties == new Dictionary<string, object>() { { "Identifier", "123" } });
 
             var raw = new TestResult(test);
-            raw.SetResult(ResultState.Success, "Wow great Score- score: 1", string.Empty);
+            raw.SetResult(ResultState.Success, "{\"timestamp\":\"2018-09-19T11:18:58.4928605+02:00\",\"success\":true,\"score\":0.98,\"threshold\":0.75}", string.Empty);
             var builder = new Data3SixtyResultBuilder();
             var result = builder.Execute(raw);
             Assert.That(result[0].Passed, Is.True);
