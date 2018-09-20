@@ -145,37 +145,34 @@
       <HintPath>..\packages\Moq.4.7.145\lib\net45\Moq.dll</HintPath>
     </Reference>
     <Reference Include="NBi.Core, Version=1.19.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.19.0-cp05\lib\net461\NBi.Core.dll</HintPath>
+      <HintPath>..\packages\NBi.Framework.1.19.0-beta0070\lib\net461\NBi.Core.dll</HintPath>
     </Reference>
-    <Reference Include="NBi.Core.SqlServer2012, Version=1.17.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.19.0-cp05\lib\net461\NBi.Core.SqlServer2012.dll</HintPath>
+    <Reference Include="NBi.Core.SqlServer2012, Version=1.19.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NBi.Framework.1.19.0-beta0070\lib\net461\NBi.Core.SqlServer2012.dll</HintPath>
     </Reference>
-    <Reference Include="NBi.Core.SqlServer2014, Version=1.17.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.19.0-cp05\lib\net461\NBi.Core.SqlServer2014.dll</HintPath>
+    <Reference Include="NBi.Core.SqlServer2014, Version=1.19.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NBi.Framework.1.19.0-beta0070\lib\net461\NBi.Core.SqlServer2014.dll</HintPath>
     </Reference>
-    <Reference Include="NBi.Core.SqlServer2016, Version=1.17.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.19.0-cp05\lib\net461\NBi.Core.SqlServer2016.dll</HintPath>
-    </Reference>
-    <Reference Include="NBi.Core.SqlServer2017, Version=1.17.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.19.0-cp05\lib\net461\NBi.Core.SqlServer2017.dll</HintPath>
+    <Reference Include="NBi.Core.SqlServer2016, Version=1.19.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NBi.Framework.1.19.0-beta0070\lib\net461\NBi.Core.SqlServer2016.dll</HintPath>
     </Reference>
     <Reference Include="NBi.Extensibility, Version=1.19.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.19.0-cp05\lib\net461\NBi.Extensibility.dll</HintPath>
+      <HintPath>..\packages\NBi.Framework.1.19.0-beta0070\lib\net461\NBi.Extensibility.dll</HintPath>
     </Reference>
     <Reference Include="NBi.Framework, Version=1.19.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.19.0-cp05\lib\net461\NBi.Framework.dll</HintPath>
+      <HintPath>..\packages\NBi.Framework.1.19.0-beta0070\lib\net461\NBi.Framework.dll</HintPath>
     </Reference>
     <Reference Include="NBi.NUnit, Version=1.19.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.19.0-cp05\lib\net461\NBi.NUnit.dll</HintPath>
+      <HintPath>..\packages\NBi.Framework.1.19.0-beta0070\lib\net461\NBi.NUnit.dll</HintPath>
     </Reference>
     <Reference Include="NBi.NUnit.Runtime, Version=1.19.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.19.0-cp05\lib\net461\NBi.NUnit.Runtime.dll</HintPath>
+      <HintPath>..\packages\NBi.Framework.1.19.0-beta0070\lib\net461\NBi.NUnit.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="NBi.Testing, Version=1.19.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.19.0-cp05\lib\net461\NBi.Testing.dll</HintPath>
+      <HintPath>..\packages\NBi.Framework.1.19.0-beta0070\lib\net461\NBi.Testing.dll</HintPath>
     </Reference>
     <Reference Include="NBi.Xml, Version=1.19.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.19.0-cp05\lib\net461\NBi.Xml.dll</HintPath>
+      <HintPath>..\packages\NBi.Framework.1.19.0-beta0070\lib\net461\NBi.Xml.dll</HintPath>
     </Reference>
     <Reference Include="NCalc, Version=1.4.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NCalc-Edge.1.4.3\lib\NCalc.dll</HintPath>
