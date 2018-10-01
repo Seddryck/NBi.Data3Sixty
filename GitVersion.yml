@@ -6,5 +6,8 @@ branches:
     tag: alpha
   releases?[/-]:
     tag: RC
+  master:
+    tag: ''
+    mode: ContinuousDelivery
 ignore:
   sha: []
