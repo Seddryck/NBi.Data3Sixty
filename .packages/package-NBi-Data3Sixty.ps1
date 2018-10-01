@@ -34,7 +34,7 @@ Write-Host "Found $($dependencies.Count) dependencies ..."
 $depList = $dependencies.Values -join [Environment]::NewLine + "`t`t"
 
 #For NBi.Data3Sixty (dll)
-$lib = "$root\NBi.Data3Sixty\lib\net470\"
+$lib = "$root\NBi.Data3Sixty\lib\net462\"
 If (Test-Path $lib)
 {
 	Remove-Item $lib -recurse

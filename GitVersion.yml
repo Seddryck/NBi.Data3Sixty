@@ -1,5 +1,4 @@
 mode: ContinuousDeployment
-continuous-delivery-fallback-tag: ''
 branches:
   dev(elop)?(ment)?$:
     tag: beta
@@ -9,5 +8,6 @@ branches:
     tag: RC
   master:
     tag: ''
+    mode: ContinuousDelivery
 ignore:
   sha: []
