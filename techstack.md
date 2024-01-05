@@ -1,7 +1,8 @@
 <!--
---- Readme.md Snippet without images Start ---
+&lt;--- Readme.md Snippet without images Start ---&gt;
 ## Tech Stack
 Seddryck/NBi.Data3Sixty is built on the following main stack:
+
 - [.NET](http://www.microsoft.com/net/) – Frameworks (Full Stack)
 - [C#](http://csharp.net) – Languages
 - [Visual Studio](http://msdn.microsoft.com/en-us/vstudio/aa718325.aspx) – Integrated Development Environment
@@ -13,11 +14,13 @@ Seddryck/NBi.Data3Sixty is built on the following main stack:
 - [Castle Core](https://github.com/castleproject/Core) – Logging Tools
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet without images End ---
 
---- Readme.md Snippet with images Start ---
+&lt;--- Readme.md Snippet without images End ---&gt;
+
+&lt;--- Readme.md Snippet with images Start ---&gt;
 ## Tech Stack
 Seddryck/NBi.Data3Sixty is built on the following main stack:
+
 - <img width='25' height='25' src='https://img.stackshare.io/service/1014/IoPy1dce_400x400.png' alt='.NET'/> [.NET](http://www.microsoft.com/net/) – Frameworks (Full Stack)
 - <img width='25' height='25' src='https://img.stackshare.io/service/1015/1200px-C_Sharp_wordmark.svg.png' alt='C#'/> [C#](http://csharp.net) – Languages
 - <img width='25' height='25' src='https://img.stackshare.io/service/1451/SR2hUhQN.png' alt='Visual Studio'/> [Visual Studio](http://msdn.microsoft.com/en-us/vstudio/aa718325.aspx) – Integrated Development Environment
@@ -29,14 +32,15 @@ Seddryck/NBi.Data3Sixty is built on the following main stack:
 - <img width='25' height='25' src='https://img.stackshare.io/service/20916/default_6d17162c9963bc83521ee29cf394f349c95173f3.png' alt='Castle Core'/> [Castle Core](https://github.com/castleproject/Core) – Logging Tools
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet with images End ---
+
+&lt;--- Readme.md Snippet with images End ---&gt;
 -->
 <div align="center">
 
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [Seddryck/NBi.Data3Sixty](https://github.com/Seddryck/NBi.Data3Sixty)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|18<br/>Tools used|11/12/23 <br/>Report generated|
+|18<br/>Tools used|01/05/24 <br/>Report generated|
 |------|------|
 </div>
 
@@ -160,10 +164,10 @@ Full tech stack [here](/techstack.md)
 |[Microsoft.AnalysisServices.AdomdClient](https://www.nuget.org/Microsoft.AnalysisServices.AdomdClient)|v12.0.2000|09/04/18|Cédric L. Charlier |N/A|N/A|
 |[Microsoft.SqlServer.SqlManagementObjects](https://www.nuget.org/Microsoft.SqlServer.SqlManagementObjects)|v140.17218.0|09/04/18|Cédric L. Charlier |N/A|N/A|
 |[NUnit.Runners](https://www.nuget.org/NUnit.Runners)|v2.7.0|09/04/18|Cédric L. Charlier |N/A|N/A|
-|[Newtonsoft.Json](https://www.nuget.org/Newtonsoft.Json)|v10.0.3|09/04/18|Cédric L. Charlier |MIT|[](https://github.com/advisories/GHSA-5crp-9r3c-p9vr) (High)|
+|[Newtonsoft.Json](https://www.nuget.org/Newtonsoft.Json)|v10.0.3|09/04/18|Cédric L. Charlier |MIT|[](https://github.com/advisories/GHSA-8rfx-6mr3-5jh3) (High)<br/>[CVE-2024-21907](https://github.com/advisories/GHSA-5crp-9r3c-p9vr) (High)|
 |[Sprache](https://www.nuget.org/Sprache)|v2.1.2|09/04/18|Cédric L. Charlier |MIT|N/A|
 
 <br/>
 <div align='center'>
 
-Generated via [Stack File](https://github.com/apps/stack-file)
+Generated via [Stack File](https://github.com/marketplace/stack-file)
